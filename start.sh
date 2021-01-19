@@ -1,3 +1,3 @@
 #!/bin/sh
-bee run
+nohup bee run &
 done
