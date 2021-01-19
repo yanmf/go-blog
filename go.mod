@@ -6,7 +6,7 @@ require (
 	github.com/PuerkitoBio/goquery v1.6.0
 	github.com/antchfx/htmlquery v1.2.3 // indirect
 	github.com/antchfx/xmlquery v1.3.3 // indirect
-	github.com/astaxie/beego v1.12.2
+	github.com/astaxie/beego v1.12.3
 	github.com/beego/bee v1.12.0 // indirect
 	github.com/flosch/pongo2 v0.0.0-20200805083417-63c99409991d // indirect
 	github.com/go-sql-driver/mysql v1.5.0
@@ -20,7 +20,7 @@ require (
 	github.com/mitchellh/mapstructure v1.3.3 // indirect
 	github.com/pelletier/go-toml v1.8.1 // indirect
 	github.com/peterh/liner v1.2.0 // indirect
-	github.com/pkg/errors v0.8.1
+	github.com/pkg/errors v0.9.1
 	github.com/robfig/cron/v3 v3.0.1
 	github.com/saintfish/chardet v0.0.0-20120816061221-3af4cd4741ca // indirect
 	github.com/shiena/ansicolor v0.0.0-20151119151921-a422bbe96644 // indirect
