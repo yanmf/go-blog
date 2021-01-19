@@ -8,6 +8,7 @@ import (
 
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
+	ippos "github.com/axgle/ip"
 )
 
 type BaseController struct {
@@ -141,7 +142,7 @@ func (c *BaseController) Keywords() {
 }
 
 func (c *BaseController) Log(page string) {
-
+	ippos.Load("./conf/17monipdb.dat") //TODO: yanmf后面需要把buf修复后需要删除
 	ip := c.Ctx.Input.IP()
 
 	userAgent := c.Ctx.Input.UserAgent()
@@ -156,7 +157,8 @@ func (c *BaseController) Log(page string) {
 	url := c.Ctx.Input.URI()
 	o := orm.NewOrm()
 	var log = admin.Log{
-		Ip: ip,
+		Ip:    ip,
+		IpPos: ippos.Find(ip),
 		//City:     		city,
 		UserAgent: userAgent,
 		Page:      page,

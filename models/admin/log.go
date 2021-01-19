@@ -1,18 +1,20 @@
 package admin
 
 import (
-	"github.com/astaxie/beego/orm"
 	"time"
+
+	"github.com/astaxie/beego/orm"
 )
 
 type Log struct {
-	Id       	int
-	Ip    		string
-	City   		string
-	UserAgent   string    	`orm:"size(500)"`
-	Create  	time.Time 	`orm:"auto_now_add;type(datetime)"`
-	Page 		string
-	Uri 		string		`orm:"size(500)"`
+	Id        int
+	Ip        string
+	IpPos     string
+	City      string
+	UserAgent string    `orm:"size(500)"`
+	Create    time.Time `orm:"auto_now_add;type(datetime)"`
+	Page      string
+	Uri       string `orm:"size(500)"`
 }
 
 func init() {

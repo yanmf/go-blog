@@ -7,6 +7,7 @@ require (
 	github.com/antchfx/htmlquery v1.2.3 // indirect
 	github.com/antchfx/xmlquery v1.3.3 // indirect
 	github.com/astaxie/beego v1.12.2
+	github.com/axgle/ip v0.0.0-20140407065652-87cce2b95b79
 	github.com/beego/bee v1.12.0 // indirect
 	github.com/flosch/pongo2 v0.0.0-20200805083417-63c99409991d // indirect
 	github.com/go-sql-driver/mysql v1.5.0
