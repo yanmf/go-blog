@@ -43,13 +43,8 @@ github.com/astaxie/beego v1.12.1 h1:dfpuoxpzLVgclveAXe4PyNKqkzgm5zF4tgF2B3kkM2I=
 github.com/astaxie/beego v1.12.1/go.mod h1:kPBWpSANNbSdIqOc8SUL9h+1oyBMZhROeYsXQDbidWQ=
 github.com/astaxie/beego v1.12.2 h1:CajUexhSX5ONWDiSCpeQBNVfTzOtPb9e9d+3vuU5FuU=
 github.com/astaxie/beego v1.12.2/go.mod h1:TMcqhsbhN3UFpN+RCfysaxPAbrhox6QSS3NIAEp/uzE=
-<<<<<<< HEAD
-github.com/astaxie/beego v1.12.3 h1:SAQkdD2ePye+v8Gn1r4X6IKZM1wd28EyUOVQ3PDSOOQ=
-github.com/astaxie/beego v1.12.3/go.mod h1:p3qIm0Ryx7zeBHLljmd7omloyca1s4yu1a8kM1FkpIA=
-=======
 github.com/axgle/ip v0.0.0-20140407065652-87cce2b95b79 h1:xG01ZPoOHc0PH7SKbFbMFcCxY540Y6JW8iFoPR3xWNs=
 github.com/axgle/ip v0.0.0-20140407065652-87cce2b95b79/go.mod h1:jHrg/UL2VnBN6RC7heaO5qbUkRb2a6A0oxjDixiZcaA=
->>>>>>> 59663d2a4ea1ea580610eea53ffe00871f254038
 github.com/beego/bee v1.12.0 h1:8KkeTxJSAJpC7mKPAI/jrMChgo2W82WZBawO/yp08qE=
 github.com/beego/bee v1.12.0/go.mod h1:JzjsS3OVzIYTJUmApBIOPmvV+LSS3WsYyObCNQlYsno=
 github.com/beego/goyaml2 v0.0.0-20130207012346-5545475820dd/go.mod h1:1b+Y/CofkYwXMUU0OhQqGvsY2Bvgr4j6jfT699wyZKQ=
@@ -293,8 +288,6 @@ github.com/pkg/errors v0.8.0 h1:WdK/asTD0HN+q6hsWO3/vpuAkAr+tw6aNJNDFFf0+qw=
 github.com/pkg/errors v0.8.0/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/pkg/errors v0.8.1 h1:iURUrRGxPUNPdy5/HRSm+Yj6okJ6UtLINN0Q9M4+h3I=
 github.com/pkg/errors v0.8.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
-github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
-github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/pkg/sftp v1.10.1/go.mod h1:lYOWFsE0bwd1+KfKJaKeuokY15vzFx25BLbzYYoAxZI=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
