@@ -70,7 +70,7 @@
                 {{range $key ,$vlaue := $.Data}}
                 <div class="day">
                     <div class="dayTitle diyBg">
-                        <a href="/list.html?date={{dateformat $vlaue.Created "2006-01-02"}}">{{$vlaue.Created}}</a>
+                        <a href="/list.html?date={{dateformat $vlaue.Created "2006-01-02"}}">{{dateformat $vlaue.Created "2006-01-02 15:04:05"}}</a>
                     </div>
                     <div class="postTitle">
                         <a class="postTitle2" title="{{$vlaue.Title}}" href="/detail/{{$vlaue.Id}}.html">

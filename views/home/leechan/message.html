@@ -55,10 +55,10 @@
                                     </span>
                                 </div>
 
-                                <a href="#{{IndexForOne $k $.Paginator.CurrentPage $.Paginator.PageSize}}" class="layer">#{{IndexForOne $k $.Paginator.CurrentPage $.Paginator.PageSize}}楼</a>
-                                <a name="{{IndexForOne $k $.Paginator.CurrentPage $.Paginator.PageSize}}" id="comment_anchor_{{IndexForOne $k $.Paginator.CurrentPage $.Paginator.PageSize}}"></a>
+                                <a href="#{{IndexForOneDesc $k $.Paginator.CurrentPage $.Paginator.PageSize $.Paginator.TotalCount}}" class="layer">#{{IndexForOneDesc $k $.Paginator.CurrentPage $.Paginator.PageSize $.Paginator.TotalCount}}楼</a>
+                                <a name="{{IndexForOneDesc $k $.Paginator.CurrentPage $.Paginator.PageSize $.Paginator.TotalCount}}" id="comment_anchor_{{IndexForOneDesc $k $.Paginator.CurrentPage $.Paginator.PageSize $.Paginator.TotalCount}}"></a>
 
-                                <span id="comment-maxId" style="display:none">{{IndexForOne $k $.Paginator.CurrentPage $.Paginator.PageSize}}</span>
+                                <span id="comment-maxId" style="display:none">{{IndexForOneDesc $k $.Paginator.CurrentPage $.Paginator.PageSize $.Paginator.TotalCount}}</span>
                                 <span id="comment-maxDate" style="display:none">{{dateformat $v.Created "2006/01/02 下午3:00:04"}}</span>
                                 <span class="comment_date">{{dateformat $v.Created "2006-01-02 15:04"}}</span>
                                 <a id="a_comment_author_4334988" href="{{$v.Site}}" target="_blank">{{$v.Name}}</a>

@@ -1,6 +1,7 @@
 package home
 
 import (
+	"fmt"
 	"go-blog/models/admin"
 	"go-blog/utils"
 	"strings"
@@ -8,7 +9,6 @@ import (
 
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
-	ippos "github.com/axgle/ip"
 )
 
 type BaseController struct {
@@ -142,7 +142,6 @@ func (c *BaseController) Keywords() {
 }
 
 func (c *BaseController) Log(page string) {
-	ippos.Load("./conf/17monipdb.dat") //TODO: yanmf后面需要把buf修复后需要删除
 	ip := c.Ctx.Input.IP()
 
 	userAgent := c.Ctx.Input.UserAgent()
@@ -156,9 +155,14 @@ func (c *BaseController) Log(page string) {
 	// Uri 		string		`orm:"size(500)"`
 	url := c.Ctx.Input.URI()
 	o := orm.NewOrm()
+
+	q := NewQQwry(beego.AppConfig.String("qqwryFilepath"))
+	q.Find(ip)
+	ipPos := fmt.Sprintf("country:%v, city:%v", q.Country, q.City)
+	// log.Printf("ip:%v, country:%v, city:%v", q.Ip, q.Country, q.City)
 	var log = admin.Log{
 		Ip:    ip,
-		IpPos: ippos.Find(ip),
+		IpPos: ipPos,
 		//City:     		city,
 		UserAgent: userAgent,
 		Page:      page,

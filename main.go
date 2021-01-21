@@ -27,6 +27,7 @@ func init() {
 	orm.RegisterDataBase(database.GetAliasName(), database.GetDriverName(), database.GetStr())
 
 	beego.AddFuncMap("IndexForOne", utils.IndexForOne)
+	beego.AddFuncMap("IndexForOneDesc", utils.IndexForOneDesc)
 	beego.AddFuncMap("IndexAddOne", utils.IndexAddOne)
 	beego.AddFuncMap("IndexDecrOne", utils.IndexDecrOne)
 	beego.AddFuncMap("StringReplace", utils.StringReplace)
